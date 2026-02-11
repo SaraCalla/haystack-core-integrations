@@ -1,0 +1,12 @@
+services:
+  vespa:
+    image: "vespaengine/vespa:latest"
+    ports:
+      - 8080:8080
+      - 19071:19071
+    restart: on-failure
+    healthcheck:
+      test: curl --fail http://localhost:19071/state/v1/health || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 30
