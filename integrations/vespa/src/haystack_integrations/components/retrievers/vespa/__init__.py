@@ -2,10 +2,11 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-from .bm25_retriever import VespaBM25Retriever
-from .embedding_retriever import VespaEmbeddingRetriever
+# TODO: uncomment when retrievers are implemented
+# from .bm25_retriever import VespaBM25Retriever
+# from .embedding_retriever import VespaEmbeddingRetriever
 
-__all__ = [
-    "VespaBM25Retriever",
-    "VespaEmbeddingRetriever",
-]
+# __all__ = [
+#     "VespaBM25Retriever",
+#     "VespaEmbeddingRetriever",
+# ]
